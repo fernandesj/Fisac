@@ -1,0 +1,61 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "FISAC - Fiscalidade, Administração e contabilidade, Lda."
+theme = "hugo-hero-theme"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+    
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "logo_fisac.jpg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "logo_fisac.jpg"
+    desktop_height = "29px"
+    desktop_width = "217px"
+    alt = "FISAC"
+
+  [params.homepage_meta_tags]
+    meta_description = "FISAC é uma empresa especializada em FIScalidade, Administração e Contabilidade que opera em Portugal."
+    meta_og_title = "Presença Digital na WEB da Empresa FISAC, Lda"
+    meta_og_type = "website"
+    meta_og_url = "https://fisac.nomundo.net"
+    # meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png"
+    meta_og_description = "FISAC é uma empresa especializada em FIScalidade, Administração e Contabilidade que opera em Portugal."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@fisac"
+    meta_twitter_creator = "@fisac"
+
+[[menu.main]]
+	name = "Serviços"
+	url = "/services/"
+    weight = 1
+
+[[menu.main]]
+    name = "Trabalho"
+    url = "/work/"
+    weight = 2
+
+[[menu.main]]
+    name = "Quem somos"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "História"
+    url = "/history/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contactos"
+    url = "/contact/"
+    weight = 4
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
